@@ -14,3 +14,11 @@ with col2:
     Hi, This is me Sunil Santhosh blablabla
     """
     st.info(content )
+
+
+
+content2 = """
+    Below you can find some of the apps i have built in python. Feel free to contact me !
+
+    """
+st.write(content2)
