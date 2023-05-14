@@ -1,5 +1,6 @@
 import smtplib
 import ssl
+import os
 
 def send_email(message):
     host = "smtp.gmail.com"
@@ -7,7 +8,8 @@ def send_email(message):
 
     username = "sunildevtest630@gmail.com"
     password = "wkardwjjrsovbhfm"    # https://myaccount.google.com/apppasswords 
-
+    #password =  os.getenv("PASSWORD")  # MAC termnals commad  $ touch ~/.zshrc; open ~/.zshrc
+    print(password)
     receiver = "sunildevtest630@gmail.com"
     context = ssl.create_default_context()
     
